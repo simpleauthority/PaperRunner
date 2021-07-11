@@ -1,0 +1,16 @@
+version: '3'
+
+services:
+  paper:
+    container_name: "paper"
+    stdin_open: true
+    tty: true
+    build:
+      context: "."
+      dockerfile: "Dockerfile"
+    ports:
+      - "25565:25565"
+    env_file:
+      - "./environment"
+    volumes:
+      - "./server_files/:/server_files/"  
