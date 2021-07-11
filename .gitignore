@@ -1,0 +1,2 @@
+server_files/*
+!server_files/download-and-run.sh
